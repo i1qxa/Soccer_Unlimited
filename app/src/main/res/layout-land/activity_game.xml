@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintGuide_percent="0.1"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.12"
+        app:layout_constraintGuide_percent="0.23"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -91,7 +91,7 @@
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         app:layout_constraintTop_toTopOf="@id/timerLogo"
         app:layout_constraintBottom_toBottomOf="@id/timerLogo"
-        app:layout_constraintStart_toStartOf="@id/timerLogo"
+        app:layout_constraintStart_toEndOf="@id/timerLogo"
         app:layout_constraintEnd_toStartOf="@id/vert90"
         android:layout_marginVertical="10dp"
         android:progressDrawable="@id/progressTimer"
