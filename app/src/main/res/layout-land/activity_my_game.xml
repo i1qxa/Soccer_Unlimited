@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameInfoActivity"
+    android:background="@drawable/main_background"
+    >
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        />
+
+    <ImageView
+        android:id="@+id/timerLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintBottom_toTopOf="@id/hor12"
+        android:src="@drawable/icon_timer10"
+        android:layout_marginStart="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressTimer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintTop_toTopOf="@id/timerLogo"
+        app:layout_constraintBottom_toBottomOf="@id/timerLogo"
+        app:layout_constraintStart_toEndOf="@id/timerLogo"
+        app:layout_constraintEnd_toStartOf="@id/vert90"
+        android:layout_marginVertical="10dp"
+        android:progressDrawable="@drawable/time_progress"
+        />
+
+    <TextView
+        android:id="@+id/tvClickAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ballBackground"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/text_color"
+        android:textSize="35sp"
+        android:fontFamily="@font/lemon_regular"
+        />
+
+    <ImageView
+        android:id="@+id/ballBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hor30"
+        app:layout_constraintBottom_toBottomOf="@id/hor70"
+        android:src="@drawable/game_background"
+        />
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/ballBackground"
+        app:layout_constraintEnd_toEndOf="@id/ballBackground"
+        app:layout_constraintTop_toTopOf="@id/ballBackground"
+        app:layout_constraintBottom_toBottomOf="@id/ballBackground"
+        android:src="@drawable/ball3"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ballBackground"
+        android:text="@string/click"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/text_color"
+        android:textSize="35sp"
+        android:fontFamily="@font/lemon_regular"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

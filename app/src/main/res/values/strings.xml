@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Soccer Unlimited</string>
+    <string name="info_txt1">During the game you need to click on the soccer ball in a certain time.</string>
+    <string name="info_txt2">Each time a random number will appear on top of the ball. That\'s the number of times you need to click on the ball.</string>
+    <string name="info_txt3">There are three levels in the game, they differ in time and the number of clicks you need to make in the available time.</string>
+    <string name="info_txt4">More difficult levels are unlocked after passing the previous one. You can also check this information in the achievements section.</string>
+    <string name="info">Info</string>
+    <string name="dot">.</string>
+    <string name="choose_level">Choose level</string>
+    <string name="awards">Awards</string>
+    <string name="click">Click!</string>
+
 </resources>
